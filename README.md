@@ -1,2 +1,4 @@
 # tcc-IA-de-auxilio-financeiro
-este repositorio servirá como um diario e como meio de enviarmos códigos e nos comunicarmos sobre o andamento do projeto de TCC de desenvolvimento de sistemas
+ola, tudo bem?
+Este repositorio esta servindo como diario de bordo e comunicação de nosso Tcc, que é uma Inteligencia Artificial que auxilia pessoas na area financeira.                                                                                                                     
+Linguagens de programação: Phyton
