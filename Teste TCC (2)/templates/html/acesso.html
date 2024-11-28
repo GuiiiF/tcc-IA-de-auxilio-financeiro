@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/acesso.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div id="sidebar" aria-label="Menu lateral">
+    <h2>Menu</h2>
+    <button id="new-chat" onclick="createNewChat()" aria-label="Iniciar novo chat">Novo Chat</button>
+    <h3>Tópicos Recentes</h3>
+    <ul id="recent-topics">
+        <!-- Recent topics will be populated here -->
+    </ul>
+</div>
+<button id="toggle-sidebar" onclick="toggleSidebar()" aria-label="Abrir ou fechar o menu lateral">
+    <img id="sidebar-icon" src="{{ url_for('static', filename='img/sidebarAberta.png') }}" alt="Abrir Menu">
+</button>
+
+<div id="main-content">
+    <div id="chatbot-container">
+        <div id="chatbox" role="region" aria-label="Área do chatbot">
+            <div id="chat-content">
+                <div id="chat-messages"></div>
+            </div>
+            <div id="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Digite sua mensagem..." aria-label="Campo de entrada para mensagens">
+                <button id="chat-send" onclick="sendMessage()" aria-label="Enviar mensagem">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="footer-message">
+        {{nomeUsuario}} Entrou!!
+    </div>
+</div>
+
+<script src="https://cdn.socket.io/4.5.1/socket.io.min.js"></script>
+<script src="{{ url_for('static', filename='js/acesso.js') }}"></script>
+</body>
+</html>
