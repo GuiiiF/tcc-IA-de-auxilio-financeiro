@@ -1,0 +1,10 @@
+flask
+flask_socketio
+jason
+spacy== 3.6.0
+brcrypt
+generativeai-forpython3.8
+chatterbot
+chatterbot_corpus
+en_core_web_sm
+pt_core_web_sm
